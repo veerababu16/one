@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width,initial-scale=1" />
-    <title>Veera — Modern E‑Commerce</title>
+    <title>Veerababu Barri — Modern E‑Commerce</title>
 
     <!-- Fonts & Icons -->
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
@@ -1117,6 +1117,130 @@
             }
         }
     </style>
+
+<style id="veerababu-ui-refresh">
+:root {
+    --bg: #f6f8fb;
+    --bg-card: #ffffff;
+    --primary: #111827;
+    --primary-light: #1f2937;
+    --accent: #2563eb;
+    --accent-light: #dbeafe;
+    --accent-dark: #1d4ed8;
+    --muted: #64748b;
+    --muted-light: #94a3b8;
+    --surface: #eef2f7;
+    --success: #16a34a;
+    --warning: #f59e0b;
+    --radius: 18px;
+    --radius-sm: 12px;
+    --shadow: 0 8px 30px rgba(15, 23, 42, .07);
+    --shadow-hover: 0 18px 50px rgba(15, 23, 42, .13);
+    --transition: .25s cubic-bezier(.4,0,.2,1);
+}
+body {
+    background:
+      radial-gradient(circle at 10% 0%, rgba(37,99,235,.06), transparent 28%),
+      var(--bg);
+}
+header {
+    background: rgba(255,255,255,.88);
+    border-bottom: 1px solid rgba(15,23,42,.07);
+    box-shadow: 0 4px 20px rgba(15,23,42,.04);
+}
+.brand {
+    font-size: 21px;
+    letter-spacing: -.7px;
+}
+.brand i { color: var(--accent); }
+.brand .accent { color: var(--accent); }
+
+nav.main-nav li a:hover,
+nav.main-nav li a.active {
+    background: var(--accent-light);
+    color: var(--accent-dark);
+}
+
+.search-wrap {
+    background: #f1f5f9;
+    border-color: transparent;
+}
+.search-wrap:focus-within {
+    border-color: var(--accent);
+    box-shadow: 0 0 0 4px rgba(37,99,235,.10);
+}
+.search-wrap button:hover { color: var(--accent); }
+
+.hero {
+    background: linear-gradient(135deg,#0f172a 0%,#1e3a8a 100%);
+    box-shadow: 0 20px 60px rgba(15,23,42,.16);
+}
+.hero::after {
+    content: '';
+    position: absolute;
+    width: 420px;
+    height: 420px;
+    right: -120px;
+    top: -160px;
+    border-radius: 50%;
+    background: rgba(37,99,235,.28);
+    filter: blur(4px);
+}
+.hero .badge {
+    background: rgba(96,165,250,.16);
+    color: #bfdbfe;
+    border: 1px solid rgba(191,219,254,.2);
+}
+.btn-primary {
+    background: var(--accent);
+    border-color: var(--accent);
+}
+.btn-primary:hover {
+    background: var(--accent-dark);
+    border-color: var(--accent-dark);
+    box-shadow: 0 8px 24px rgba(37,99,235,.30);
+}
+.cat-card, .product-card, .testimonial-card, .deal-wrap {
+    border: 1px solid rgba(15,23,42,.06);
+}
+.cat-card:hover, .product-card:hover {
+    border-color: #bfdbfe;
+}
+.cat-card .icon-wrap {
+    background: var(--accent-light);
+    color: var(--accent);
+}
+.cat-card:hover .icon-wrap {
+    background: var(--accent);
+}
+.product-card .footer .add-btn:hover {
+    background: var(--accent);
+}
+.product-card .badge { background: var(--accent); }
+.newsletter-wrap {
+    background: linear-gradient(135deg,#0f172a 0%,#1e3a8a 100%);
+}
+.newsletter-wrap form .btn {
+    background: var(--accent);
+    border-color: var(--accent);
+}
+.newsletter-wrap form .btn:hover {
+    background: var(--accent-dark);
+    border-color: var(--accent-dark);
+}
+.footer-grid .brand-col .socials a:hover {
+    background: var(--accent);
+}
+.section-header .view-all {
+    color: var(--accent);
+}
+.section-header .view-all:hover { color: var(--accent-dark); }
+
+@media (max-width: 768px) {
+    .hero::after { width: 260px; height: 260px; right: -120px; top: -90px; }
+}
+</style>
+
 </head>
 
 <body>
@@ -1130,7 +1254,7 @@
                 </button>
                 <a class="brand" href="#">
                     <em class="fas fa-store-alt"></em>
-                    <span>Nexus<span class="accent">Shop</span></span>
+                    <span>Veerababu<span class="accent">Barri</span></span>
                 </a>
             </div>
 
@@ -1307,7 +1431,7 @@
                 <div class="brand-col">
                     <div class="brand">
                         <i class="fas fa-store-alt"></i>
-                        <span>Nexus<span class="accent">Shop</span></span>
+                        <span>Veerababu<span class="accent">Barri</span></span>
                     </div>
                     <p>Modern e‑commerce demo built with care. Quality products, seamless experience.</p>
                     <div class="socials">
@@ -1345,7 +1469,7 @@
                 </div>
             </div>
             <div class="footer-bottom">
-                &copy; <span id="year"></span> NexusShop. All rights reserved.
+                &copy; <span id="year"></span> Veerababu Barri. All rights reserved.
             </div>
         </div>
     </footer>
